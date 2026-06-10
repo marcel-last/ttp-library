@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTP Field Manual — ATT&CK Knowledge Base</title>
+<meta name="description" content="Internal red team & offensive security TTP reference, structured on MITRE ATT&CK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="wordmark">
+        <span class="glyph">ATT&amp;CK</span>
+        <h1>TTP Field Manual</h1>
+        <span class="sub">// <span id="attackVer">Enterprise</span></span>
+      </div>
+      <div class="search-wrap">
+        <span class="ico">&#9906;</span>
+        <input id="search" type="text" placeholder="Search techniques, IDs, tools…  ( / )" autocomplete="off" spellcheck="false" aria-label="Search techniques">
+      </div>
+      <div class="toolbar">
+        <span class="stat" id="stats"></span>
+        <button class="btn" id="favFilter">&#9733; Saved</button>
+        <button class="btn" id="exportBtn">Export</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="rail" aria-label="Kill chain">
+      <div class="rail-head">Kill Chain · 14 Stages</div>
+      <ul class="chain" id="chain"></ul>
+    </nav>
+    <main class="main" id="main"></main>
+  </div>
+
+  <footer class="colophon">
+    <div class="rule"></div>
+    Built on the MITRE ATT&amp;CK&reg; framework — a public knowledge base of adversary tactics and techniques.
+    This is an internal authorized-testing reference: each card pairs offensive context with detection and mitigation,
+    and links to the official <a href="https://attack.mitre.org/" target="_blank" rel="noopener">attack.mitre.org</a> entry.
+    Saved techniques and notes stay in your browser. To load the complete official matrix, see the README build script.
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="dossier" id="dossier" aria-label="Technique detail"></aside>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
